@@ -1,0 +1,50 @@
+[
+	{
+		"month" : "April",
+		"revenue" : 22381787
+	},
+	{
+		"month" : "August",
+		"revenue" : 22223541
+	},
+	{
+		"month" : "December",
+		"revenue" : 23268413
+	},
+	{
+		"month" : "February",
+		"revenue" : 19303924
+	},
+	{
+		"month" : "January",
+		"revenue" : 22420049
+	},
+	{
+		"month" : "July",
+		"revenue" : 22097673
+	},
+	{
+		"month" : "June",
+		"revenue" : 21728252
+	},
+	{
+		"month" : "March",
+		"revenue" : 23602292
+	},
+	{
+		"month" : "May",
+		"revenue" : 22026411
+	},
+	{
+		"month" : "November",
+		"revenue" : 20352438
+	},
+	{
+		"month" : "October",
+		"revenue" : 21818829
+	},
+	{
+		"month" : "September",
+		"revenue" : 21190178
+	}
+]
