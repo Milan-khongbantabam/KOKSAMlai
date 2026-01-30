@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monthly Revenue</title>
+  <style>
+    body {
+      background: black;
+      color: aliceblue;
+      font-family: Arial;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid white;
+      padding: 8px 16px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Monthly Revenue</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Revenue</th>
+    </tr>
+  </thead>
+  <tbody id="tablebody"></tbody>
+</table>
+
+<script>
+fetch("./Monthly_Revenue.json")
+  .then(res => res.json())
+  .then(data => {
+    const tbody = document.getElementById("tablebody");
+
+    data.forEach(item => {
+      tbody.innerHTML += `
+        <tr>
+          <td>${item.month}</td>
+          <td>${item.revenue}</td>
+        </tr>
+      `;
+    });
+  })
+  .catch(err => console.error(err));
+</script>
+
+</body>
+</html>
