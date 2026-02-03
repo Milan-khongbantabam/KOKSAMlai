@@ -2,53 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Monthly Revenue</title>
+  <title>Top Products Report</title>
   <style>
     body {
-      background: black;
-      color: aliceblue;
-      font-family: Arial;
+      background:rgb(7, 0, 0);
+      color:rgb(251, 249, 249);
+      font-family: 'Times New Roman', Times, serif;
+      padding: 20px;
     }
     table {
       border-collapse: collapse;
+      width: 100%;
       margin-top: 20px;
     }
     th, td {
-      border: 1px solid white;
-      padding: 8px 16px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #eaaeae;
     }
   </style>
 </head>
 <body>
 
-<h2>Monthly Revenue</h2>
+<h2>Sales Record(Date)</h2>
 
 <table>
   <thead>
     <tr>
-      <th>Month</th>
-      <th>Revenue</th>
+      <th>Sales_Date</th>
+      <th>Item_ID</th>
+      <th>Item_Name</th>
+      <th>Sales_Quantity</th>
+      <th>Total_Amount</th>
     </tr>
   </thead>
-  <tbody id="tablebody"></tbody>
+  <tbody id="tableBody"></tbody>
 </table>
 
 <script>
-fetch("./Monthly_Revenue.json")
-  .then(res => res.json())
+fetch("sales_item.json")
+  .then(response => response.json())
   .then(data => {
-    const tbody = document.getElementById("tablebody");
+    const tbody = document.getElementById("tableBody");
 
     data.forEach(item => {
-      tbody.innerHTML += `
+      const row = `
         <tr>
-          <td>${item.month}</td>
-          <td>${item.revenue}</td>
+          <td>${item.Sales_Date}</td>
+          <td>${item.Item_ID}</td>
+          <td>${item.Item_Name}</td>
+          <td>${item.Sales_Quantity}</td>
+          <td>${item.Total_Amount}</td>
         </tr>
       `;
+      tbody.innerHTML += row;
     });
   })
-  .catch(err => console.error(err));
+  .catch(err => {
+    console.error("Error loading JSON:", err);
+  });
 </script>
 
 </body>

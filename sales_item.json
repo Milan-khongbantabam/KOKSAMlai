@@ -1,0 +1,16 @@
+
+[
+{"Sales_Date":"2026-02-01","Item_ID":"101","Item_Name":"Laptop","Sales_Quantity":"1","Total_Amount":"59000.00000000"},
+{"Sales_Date":"2026-02-01","Item_ID":"102","Item_Name":"Mouse","Sales_Quantity":"1","Total_Amount":"590.00000000"},
+{"Sales_Date":"2026-02-02","Item_ID":"103","Item_Name":"Keyboard","Sales_Quantity":"1","Total_Amount":"1416.00000000"},
+{"Sales_Date":"2026-02-07","Item_ID":"110","Item_Name":"Mouse","Sales_Quantity":"2","Total_Amount":"1416.00000000"},
+{"Sales_Date":"2026-02-07","Item_ID":"111","Item_Name":"SSD 512GB","Sales_Quantity":"1","Total_Amount":"6490.00000000"},
+{"Sales_Date":"2026-02-08","Item_ID":"111","Item_Name":"SSD 512GB","Sales_Quantity":"1","Total_Amount":"6490.00000000"},
+{"Sales_Date":"2026-02-08","Item_ID":"109","Item_Name":"Keyboard","Sales_Quantity":"1","Total_Amount":"1416.00000000"},
+{"Sales_Date":"2026-02-09","Item_ID":"112","Item_Name":"Router","Sales_Quantity":"1","Total_Amount":"3540.00000000"},
+{"Sales_Date":"2026-02-10","Item_ID":"113","Item_Name":"Power Bank","Sales_Quantity":"1","Total_Amount":"1888.00000000"},
+{"Sales_Date":"2026-02-10","Item_ID":"111","Item_Name":"SSD 512GB","Sales_Quantity":"1","Total_Amount":"6490.00000000"},
+{"Sales_Date":"2026-02-11","Item_ID":"109","Item_Name":"Keyboard","Sales_Quantity":"1","Total_Amount":"1416.00000000"},
+{"Sales_Date":"2026-02-11","Item_ID":"110","Item_Name":"Mouse","Sales_Quantity":"1","Total_Amount":"708.00000000"}
+]
+
